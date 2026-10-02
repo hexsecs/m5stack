@@ -1,8 +1,26 @@
-# Toddler Toolkit (M5StickC Plus / Plus2)
+# Toddler Toolkit: a bedtime routine chart for M5StickC Plus / Plus2
 
-Little apps for a 3-year-old on an M5StickC Plus. Each app uses one big
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PlatformIO](https://img.shields.io/badge/built%20with-PlatformIO-orange.svg)](https://platformio.org/)
+[![Hardware: M5StickC Plus](https://img.shields.io/badge/hardware-M5StickC%20Plus%20%2F%20Plus2-red.svg)](https://docs.m5stack.com/en/core/m5stickc_plus)
+
+Open-source **ESP32 firmware for kids** that turns an **M5StickC Plus** or
+**M5StickC Plus2** into a toddler-friendly **visual bedtime routine chart**
+and reward star chart. Little apps for a 3-year-old: each one uses one big
 button and gives instant feedback. Pictures replace words, and there is
-no way to "lose".
+no way to "lose". Built with Arduino, PlatformIO and M5Unified, with a
+desktop SDL simulator so you can try it without hardware.
+
+**Features**
+
+- Picture-based bedtime checklist (toys, teeth, potty, bath, pajamas,
+  books, lights out), no reading needed
+- Big-button feedback: animation, tick, stars and a little tune for each step
+- Weekly reward star chart saved in flash, with a 7-night celebration
+- Grown-up controls to go back, skip a step or restart
+- Battery-friendly deep sleep that resumes where you left off
+- No image files: every icon is drawn in code and is easy to customise
+- Runs on M5StickC Plus and Plus2 from a single build, plus a desktop simulator
 
 ## Mode 1: Bedtime Adventure
 
@@ -19,7 +37,7 @@ A picture checklist for getting ready for bed, based on our bedtime chart:
 9. Tuck in stuffie
 10. Lights out
 
-![Bedtime screens](docs/bedtime-screens.png)
+![M5StickC Plus bedtime routine chart screens for toddlers: picture checklist steps and reward stars](docs/bedtime-screens.png)
 
 **For the kid:** press the **big front button (A)** after finishing a step.
 The picture hops, a green tick pops up, stars fly out and a little tune
@@ -114,3 +132,27 @@ test/            host unit tests
 
 The StickC is small and has a lithium battery inside. Put it in a silicone
 case or on a lanyard, and use it with a grown-up around.
+
+## Contributing
+
+Ideas, new toddler modes, new icons and bug fixes are all welcome.
+
+1. Fork the repo and create a branch.
+2. Make your change. Keep the logic in `lib/` hardware-free so it can be
+   unit tested.
+3. Run `pio test -e native` and check the build with `pio run`.
+4. Open a pull request that describes what changed. A photo or simulator
+   screenshot of new screens helps.
+
+Please open an issue first for larger changes, such as a new mode.
+
+## Contributors
+
+- [Philip Lapczynski](https://github.com/hexsecs): creator and maintainer
+
+Contributed to the project? Add yourself to this list in your pull request.
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Philip
+Lapczynski.
