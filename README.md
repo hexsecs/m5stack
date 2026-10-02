@@ -1,4 +1,5 @@
-# Toddler Toolkit: a bedtime routine chart for M5StickC Plus / Plus2
+# ![Toddler Toolkit: a bedtime routine chart for M5StickC Plus / Plus2](docs/social-preview.png)
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PlatformIO](https://img.shields.io/badge/built%20with-PlatformIO-orange.svg)](https://platformio.org/)
